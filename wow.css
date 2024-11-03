@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Tiny5&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tiny5&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+header,li, a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 0 10px;
+    color: black;
+}
+
+header,li, a:hover {
+    color: rgb(219, 80, 80);
+    transition: 0.3s ease-in;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0px;
+    border: solid rgb(244, 242, 242);
+    box-shadow: 0px 0 10px 10px rgba(0, 0, 0, 0.636);
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    list-style-type: none;
+    margin-left: auto;
+    background-color: #ffffff;
+}
+
+.logo {
+    padding: 0px 10px;
+    background-color: #ffffff;
+    font-family: "Courier New", monospace;
+    cursor: pointer;
+}
+
+.profile {
+    width: 500px;
+    height: auto;
+    border-radius: 50%;
+    align-items: center;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 600px; 
+    height: auto;
+    border-radius: 50%;
+    
+}
+
+@media (max-width: 1200px) {
+    .image-container img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-container img {
+        width: 40%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .image-container img {
+        width: 30%;
+    }
+}
+
+
+
+
+
+
+body, html {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+    align-items: center;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+.table-section {
+    flex: 1;
+}
+
+.table-container {
+    max-width: auto;
+    
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.footer {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: auto;
+    
+    padding: 0 0px;
+    text-align: center;
+    
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    margin-top: 0;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer .social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.footer .social-icons a {
+    color: #000000;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.footer .social-icons a:hover {
+    color: #000000;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 0px 10px;
+    border-top: 1px solid #000000;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.passage{
+    text-align: center;
+    background-color: #ffffff;
+    justify-content: space-around;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 100px;
+    
+}

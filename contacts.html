@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: auto;
+    background: #ffffff00;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.contact-details, .contact-form {
+    flex: 1 1 45%;
+    margin-bottom: 20px;
+    padding: 10%;
+    background: #00000000;
+    border-radius: 15px;
+}
+.contact-details{
+    text-align: center;
+    flex: 1 1 100%;
+}
+
+
+.contact-details h2, .contact-form h2 {
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 10px;
+}
+
+.contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0 20px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-form input[type="submit"] {
+    background-color: rgb(219, 80, 80);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color:rgb(219, 80, 80);
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .contact-details, .contact-form {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+}
+
+header,li, a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 0 10px;
+    color: black;
+}
+
+header,li, a:hover {
+    color: rgb(0, 0, 0);
+    transition: 0.3s ease-in;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0px;
+    border: solid rgb(244, 242, 242);
+    box-shadow: 0px 0 10px 10px rgba(0, 0, 0, 0.109);
+    padding: 0px;
+    
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin-left: auto;
+    background-color: #ffffff;
+}
+
+.logo {
+    padding: 0px 0px;
+    background-color: #ffffff;
+    font-family: "Courier New", monospace;
+    cursor: pointer;
+    color: #000;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0px;
+    background-color: #f4f4f4;
+}
+.footer {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: auto;
+    
+    padding: 10 0px;
+    text-align: center;
+
+    
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-section h3 {
+    margin-top: 0;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer .social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.footer .social-icons a {
+    color: #000000;
+    font-size: 1.5em;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.footer .social-icons a:hover {
+    color: #ff0000;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 0px 10px;
+    border-top: 1px solid #000000;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+}
+
+    </style>
+    
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/949050fb1b.js" crossorigin="anonymous"></script>
+    <script src="contact.js" crossorigin="anonymous"></script>
+    <header>
+        <a href="wow.html#"><h1 class="logo">Srikar Maddela</h1></a>
+        <nav>
+            <li><a href="resume.html">resume</a></li>
+            <h1>|</h1>
+            <li><a href="projects.html">projects</a></li>
+            <h1>|</h1>
+            <li><a href="#">contacts</a></li>
+        </nav>
+    </header>
+    <div class="contact-container">
+        <div class="contact-details">
+            <h2>Contact Details</h2>
+            <p>Email: info@example.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Address: 123 Example Street, City, Country</p>
+        </div>
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Subject..">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email..">
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-section">
+                <h3>About ME</h3>
+                <p>Experienced data and ml engineer ready to join! .</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="wow.html#">Home</a></li>
+                    <li><a href="resume.html">resume</a></li>
+                    <li><a href="projects.html">projects</a></li>
+                    <li><a href="contacts.html">Contact</a></li>
+                </ul>
+            </div>
+           
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@example.com</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Address: 123 Example Street, City, Country</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons" style="justify-content: center;">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 srikarmaddela. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+   
+</body>
+</html>
+
+</body>
+</html>
